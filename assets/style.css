@@ -1,0 +1,75 @@
+:root {
+  --outline: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+header {
+  border: none;
+  text-align: center;
+  font-family: "Coda", cursive;
+  text-shadow: var(--outline);
+}
+
+nav {
+  color: white;
+  font-family: "Coda", cursive;
+  text-shadow: var(--outline);
+  justify-items: end;
+  padding: 5px;
+}
+
+a {
+  padding: 5px;
+}
+.wikibutton {
+  color: blue;
+  background-color: white;
+}
+
+a:hover {
+  background-color: darkred;
+  padding: 5px;
+}
+
+body {
+  background-color: black;
+  background-image: url("./images/bg4.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+p {
+  color: white;
+  text-shadow: var(--outline);
+  font-family: "Ubuntu", sans-serif;
+  padding: 10px;
+}
+
+main {
+  min-height: 850px;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.search_block {
+  display: inline-flex;
+  flex-direction: column;
+  align-content: flex-start;
+  flex-wrap: nowrap;
+  width: 20%;
+  min-height: 845px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.search_btn {
+  color: white;
+  margin: 25px 10px 10px 10px;
+  border: none;
+}
+
+.search_btn:hover {
+  opacity: 0.5;
+}

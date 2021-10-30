@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Coda:wght@800&family=Ubuntu&display=swap" rel="stylesheet">
+
+    <!-- ADDED THESE ELEMENTS IN ORDER TO USE THE JQUERY MODAL DIALOG BOX. -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+    <link rel="stylesheet" href="./assets/style.css" />
+
+
+    <title>Marvel Facts for Fans</title>
+  </head>
+  <body>
+    <header> 
+        <div class="bg-auto bg-center" style="background-image: url(./assets/images/ban1.jpeg)">
+        <h1 class="text-white text-6xl font-extrabold" id="title">Marvel History</h1>
+        </div>
+        <nav class="navBar">
+            <a href="./index.html">Character Search</a>
+            <a href="./historyindex.html">Marvel History</a>
+        </nav>
+    </header>
+    <main>
+
+      <div class="flex justify-between py20 px-10 ">
+        <div class="w-1/4">
+          <div class="container">
+            <section id="search_block" class="search_block">
+              <h3 class="text text-white">Enter Marvel Character:</h3>
+              <input type="text" class="border-2 border-red-500" id="input" placeholder="Enter your hero"/>
+              <button id="btn" type="button" class="search_btn ring-2 ring-red-600 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" state-code="search">Search</button>
+              <div id="search-history"></div>
+            </section>
+          </div>
+      </div>
+      ​
+      <!--right side-->
+      ​
+      <div class="w-3/4 grid grid-cols-1 sm:grid-cols-3 overflow-hidden text-black border-solid border-light-blue-500">
+          <!--Card 1--> 
+          <div class="rounded overflow-hidden shadow-lg w-fill">
+            <img id="char-pic" class="col" />
+            <div class="px-6 py-4">
+            </div>
+          </div>
+          <!--Card 2-->
+          <div class="rounded overflow-hidden shadow-lg">
+            <div class="px-6 py-4">
+              <h1 class="text text-white" id="char-name"></h1>
+              <p id="marvel-desc"></p>
+              <p id="wiki-desc"></p>
+              <a id="wiki-link"></a>
+            </div>
+          </div>
+      
+          <!--Card 3-->
+          <div class="rounded overflow-hidden shadow-lg">
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2"></div>
+              <div id="comic-area"></div>
+              
+              
+          </div>
+        </div>
+      </div>
+    
+      <div id="comic-area"></div>
+      
+    <!------------------------------------------------------------------------------------------------------------------>
+    <!-- ADDED THESE ELEMENTS IN ORDER TO USE THE JQUERY MODAL DIALOG BOX. -->
+    <!------------------------------------------------------------------------------------------------------------------>
+    <div id="dialog" title="Dialog">
+      <p></p>
+    </div>
+    
+
+    <!-- ADDED THESE ELEMENTS IN ORDER TO USE THE JQUERY MODAL DIALOG BOX. -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- Commented out Ryans jquery script.  -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/script.js"></script>
+
+    </main>
+  </body>
+</html>
